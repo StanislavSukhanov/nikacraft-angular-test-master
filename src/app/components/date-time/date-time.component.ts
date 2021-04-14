@@ -6,5 +6,6 @@ import { DateTimeService } from 'src/app/services/date-time.service';
   templateUrl: './date-time.component.html',
 })
 export class DateTimeComponent {
-  constructor(dateTimeService: DateTimeService) {}
+  dateTime$ = this.dateTimeService.getDateTimeInfo();
+  constructor(public dateTimeService: DateTimeService) {}
 }

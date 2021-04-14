@@ -1,35 +1,38 @@
-<div>
+<div *ngIf="dateTime$ | async as data">
     <h1>Current date</h1>
     <div>
         <p>Day</p>
         <p>
             <!-- Render Day here -->
+            {{data.day}}
         </p>
     </div>
     <div>
         <p>Month</p>
         <p>
             <!-- Render Month here -->
+            {{data.month}}
         </p>
     </div>
     <div>
         <p>Year</p>
         <p>
             <!-- Render Year here -->
+            {{data.year}}
         </p>
     </div>
     <h1>Current time</h1>
     <div>
         <p>Time</p>
         <p>
-            <!-- Render Time here -->
+            {{data.currentTime}}
         </p>
     </div>
     <h1>Current timezone</h1>
     <div>
         <p>Timezone</p>
         <p>
-            <!-- Render Timezone here -->
+            {{data.timeZone}}
         </p>
     </div>
 </div>

@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://worldtimeapi.org/api/ip",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}
